@@ -46,7 +46,7 @@ class PdfCertificateService {
                   ),
                 pw.SizedBox(height: 10),
                 pw.Text(
-                  'Nisargavaidya',
+                  'Tree Plantation Program',
                   style: pw.TextStyle(
                     fontSize: 24,
                     fontWeight: pw.FontWeight.bold,
@@ -104,7 +104,7 @@ class PdfCertificateService {
                           pw.Text('Area: ${tree.areaName}'),
                         pw.SizedBox(height: 10),
                         pw.BarcodeWidget(
-                          data: 'geocamera://tree/${tree.treeId}',
+                          data: 'ngo-tree-tracker://tree/${tree.treeId}',
                           width: 60,
                           height: 60,
                           barcode: pw.Barcode.qrCode(),
@@ -169,7 +169,7 @@ class PdfCertificateService {
                   pw.Center(child: pw.Image(logoImage, width: 60, height: 60)),
                 pw.SizedBox(height: 10),
                 pw.Text(
-                  'Nisargavaidya Environmental Award',
+                  'Environmental Impact Award',
                   style: pw.TextStyle(
                     fontSize: 20,
                     fontWeight: pw.FontWeight.bold,
@@ -246,7 +246,7 @@ class PdfCertificateService {
                       ],
                     ),
                     pw.BarcodeWidget(
-                      data: 'https://nisargavaidya.org/donor/${Uri.encodeComponent(donor)}',
+                      data: 'https://example.org/donor/${Uri.encodeComponent(donor)}',
                       width: 50,
                       height: 50,
                       barcode: pw.Barcode.qrCode(),

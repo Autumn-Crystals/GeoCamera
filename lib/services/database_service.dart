@@ -14,7 +14,7 @@ class DatabaseService {
 
   static Future<Database> _initDB() async {
     final dbPath = await getDatabasesPath();
-    final path = join(dbPath, 'geocamera_v2.db');
+    final path = join(dbPath, 'ngo_tree_tracker_v2.db');
 
     return await openDatabase(
       path,

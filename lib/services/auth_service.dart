@@ -6,7 +6,7 @@ import '../models/tree_model.dart';
 import 'database_service.dart';
 
 class AuthService {
-  static const _currentUserKey = 'geocamera_current_user';
+  static const _currentUserKey = 'ngo_tree_tracker_current_user';
   static final _uuid = const Uuid();
 
   // Securely hash passwords

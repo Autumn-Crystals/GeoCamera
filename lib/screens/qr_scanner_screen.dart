@@ -36,9 +36,9 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
     setState(() => _isProcessing = true);
     HapticFeedback.mediumImpact();
 
-    // Check if it's a valid geocamera QR code
-    if (code.startsWith('geocamera://tree/')) {
-      final treeId = code.replaceFirst('geocamera://tree/', '');
+    // Check if it's a valid tree tracker QR code
+    if (code.startsWith('ngo-tree-tracker://tree/')) {
+      final treeId = code.replaceFirst('ngo-tree-tracker://tree/', '');
       
       // Verify tree exists
       final tree = await DatabaseService.getTreeById(treeId);

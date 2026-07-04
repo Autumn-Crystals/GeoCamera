@@ -9,7 +9,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
     <uses-feature android:name="android.hardware.location.gps" android:required="false" />
     <application
-        android:label="Nisargavaidya"
+        android:label="Tree Tracker"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

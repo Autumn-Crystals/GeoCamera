@@ -1,4 +1,4 @@
-package com.ngo.geocamera.geocamera
+package com.ngo.treetracker
 
 import io.flutter.embedding.android.FlutterActivity
 

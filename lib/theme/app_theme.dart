@@ -2,34 +2,49 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  // Colors
-  static const Color bgPrimary = Color(0xFF0A0F0D);
-  static const Color bgSecondary = Color(0xFF111A16);
-  static const Color bgCard = Color(0xFF162019);
-  static const Color bgCardHover = Color(0xFF1C2B22);
-  static const Color bgElevated = Color(0xFF1E2D25);
+  // ── Earthy Premium Dark ─────────────────────────────────────────────────────
+  // Backgrounds — warm forest, clearly stepped so cards pop
+  static const Color bgPrimary    = Color(0xFF080E08); // deep forest floor
+  static const Color bgSecondary  = Color(0xFF0F1C10); // mossy dark
+  static const Color bgCard       = Color(0xFF152218); // rich earth
+  static const Color bgCardHover  = Color(0xFF1C2E1E); // hovered card
+  static const Color bgElevated   = Color(0xFF1E3322); // elevated surface
 
-  static const Color primary = Color(0xFF34D399);
-  static const Color primaryDark = Color(0xFF059669);
-  static const Color primaryLight = Color(0xFF6EE7B7);
-  static const Color primarySubtle = Color(0x1A34D399);
+  // Primary — vivid lime-green (pops on warm dark, not a flat template green)
+  static const Color primary      = Color(0xFF4ADE80);
+  static const Color primaryDark  = Color(0xFF16A34A);
+  static const Color primaryLight = Color(0xFF86EFAC);
+  static const Color primarySubtle= Color(0x1A4ADE80);
 
-  static const Color accent = Color(0xFFFBBF24);
-  static const Color danger = Color(0xFFF87171);
-  static const Color info = Color(0xFF60A5FA);
-  static const Color success = Color(0xFF34D399);
-  static const Color warning = Color(0xFFFBBF24);
+  // Accent — sunset orange (sunlight + trees = planting story)
+  static const Color accent   = Color(0xFFF97316);
+  static const Color accentSoft = Color(0x33F97316);
 
-  static const Color textPrimary = Color(0xFFF0FDF4);
-  static const Color textSecondary = Color(0xFFA7C4B5);
-  static const Color textMuted = Color(0xFF6B8F7B);
+  // Semantic
+  static const Color danger  = Color(0xFFFF6B6B);
+  static const Color info    = Color(0xFF60A5FA);
+  static const Color success = Color(0xFF4ADE80);
+  static const Color warning = Color(0xFFF97316);
 
-  static const Color border = Color(0x2634D399);
-  static const Color borderStrong = Color(0x4D34D399);
-  static const Color divider = Color(0x0FFFFFFF);
+  // Text — warm cream hierarchy, readable on warm dark backgrounds
+  static const Color textPrimary   = Color(0xFFF7FEF0); // warm cream
+  static const Color textSecondary = Color(0xFFB0D4BC); // sage-green mid
+  static const Color textMuted     = Color(0xFF7DA98A); // muted sage
 
+  // Borders
+  static const Color border       = Color(0x264ADE80);
+  static const Color borderStrong = Color(0x4D4ADE80);
+  static const Color divider      = Color(0x12FFFFFF);
+
+  // Gradients
   static const LinearGradient gradientPrimary = LinearGradient(
     colors: [primaryDark, primary],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
+  static const LinearGradient gradientAccent = LinearGradient(
+    colors: [Color(0xFFEA580C), accent],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );

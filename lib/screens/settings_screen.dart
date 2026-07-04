@@ -273,7 +273,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               _buildInfoTile(
                 Icons.business,
                 'Organization',
-                'Nisargavaidya',
+                'NGO Tree Tracker',
               ),
             ],
           ),

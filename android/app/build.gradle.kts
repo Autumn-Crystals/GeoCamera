@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.ngo.geocamera.geocamera"
+    namespace = "com.ngo.treetracker"
     compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
@@ -21,7 +21,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.ngo.geocamera.geocamera"
+        applicationId = "com.ngo.treetracker"
         minSdk = flutter.minSdkVersion
         targetSdk = 36
         versionCode = flutter.versionCode

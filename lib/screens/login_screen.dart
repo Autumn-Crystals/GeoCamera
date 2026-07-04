@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
         await AuthService.registerUser(_nameCtrl.text.trim(), _emailCtrl.text.trim(), _passCtrl.text, role: _selectedRole);
         await AuthService.loginUser(_emailCtrl.text.trim(), _passCtrl.text);
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Welcome to Nisargavaidya, ${_nameCtrl.text.trim()}! 🌳')));
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Welcome to Tree Tracker, ${_nameCtrl.text.trim()}! 🌳')));
         }
       } else {
         final user = await AuthService.loginUser(_emailCtrl.text.trim(), _passCtrl.text);
@@ -94,7 +94,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                     const SizedBox(height: 16),
                     ShaderMask(
                       shaderCallback: (bounds) => AppTheme.gradientPrimary.createShader(bounds),
-                      child: Text('Nisargavaidya', style: Theme.of(context).textTheme.displayMedium?.copyWith(color: Colors.white)),
+                      child: Text('Tree Tracker', style: Theme.of(context).textTheme.displayMedium?.copyWith(color: Colors.white)),
                     ),
                     const SizedBox(height: 4),
                     Text('Tree Tracking Platform', style: Theme.of(context).textTheme.bodyMedium),

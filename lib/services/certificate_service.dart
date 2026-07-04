@@ -327,7 +327,7 @@ class CertificateService {
                         style: const pw.TextStyle(fontSize: 10),
                       ),
                       pw.Text(
-                        'Nisargavaidya',
+                        'Tree Plantation Program',
                         style: pw.TextStyle(
                           fontSize: 12,
                           fontWeight: pw.FontWeight.bold,

@@ -1,5 +1,5 @@
-name: geocamera
-description: "GeoCamera — NGO Tree Plantation Tracking App"
+name: ngo_tree_tracker
+description: "NGO Tree Plantation Tracking System - Mobile app for tracking tree plantations with geolocation, health monitoring, and offline support"
 publish_to: 'none'
 version: 1.0.0+1
 

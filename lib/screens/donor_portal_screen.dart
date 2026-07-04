@@ -62,7 +62,7 @@ class _DonorPortalScreenState extends State<DonorPortalScreen> {
     HapticFeedback.mediumImpact();
     
     // In a real app, this would be a web URL like: https://yourapp.com/donor/john-doe
-    final link = 'geocamera://donor/${Uri.encodeComponent(donor)}';
+    final link = 'ngo-tree-tracker://donor/${Uri.encodeComponent(donor)}';
     final message = '''
 🌳 Your Tree Plantation Report
 
@@ -73,7 +73,7 @@ Thank you for your contribution! You have planted ${_donorTrees.length} trees.
 View your trees and their growth progress:
 $link
 
-- GeoCamera Team
+- Tree Tracker Team
 ''';
 
     await Share.share(message, subject: 'Your Tree Plantation Report');

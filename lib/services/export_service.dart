@@ -54,7 +54,7 @@ class ExportService {
     // Save to file
     final directory = await getApplicationDocumentsDirectory();
     final timestamp = DateFormat('yyyyMMdd_HHmmss').format(DateTime.now());
-    final file = File('${directory.path}/geocamera_export_$timestamp.csv');
+    final file = File('${directory.path}/tree_tracker_export_$timestamp.csv');
     await file.writeAsString(csv);
 
     return file;
@@ -133,7 +133,7 @@ class ExportService {
     // Save to file
     final directory = await getApplicationDocumentsDirectory();
     final timestamp = DateFormat('yyyyMMdd_HHmmss').format(DateTime.now());
-    final file = File('${directory.path}/geocamera_export_$timestamp.xlsx');
+    final file = File('${directory.path}/tree_tracker_export_$timestamp.xlsx');
     
     final bytes = excel.encode();
     if (bytes != null) {
@@ -148,8 +148,8 @@ class ExportService {
     final file = await exportToCSV();
     await Share.shareXFiles(
       [XFile(file.path)],
-      subject: 'GeoCamera Data Export - ${_formatDate(DateTime.now().toIso8601String())}',
-      text: 'Tree plantation data exported from GeoCamera app',
+      subject: 'Tree Tracker Data Export - ${_formatDate(DateTime.now().toIso8601String())}',
+      text: 'Tree plantation data exported from NGO Tree Tracker app',
     );
   }
 
@@ -158,8 +158,8 @@ class ExportService {
     final file = await exportToExcel();
     await Share.shareXFiles(
       [XFile(file.path)],
-      subject: 'GeoCamera Data Export - ${_formatDate(DateTime.now().toIso8601String())}',
-      text: 'Tree plantation data exported from GeoCamera app',
+      subject: 'Tree Tracker Data Export - ${_formatDate(DateTime.now().toIso8601String())}',
+      text: 'Tree plantation data exported from NGO Tree Tracker app',
     );
   }
 
@@ -180,7 +180,7 @@ class ExportService {
 
     final directory = await getApplicationDocumentsDirectory();
     final timestamp = DateFormat('yyyyMMdd_HHmmss').format(DateTime.now());
-    final file = File('${directory.path}/geocamera_backup_$timestamp.json');
+    final file = File('${directory.path}/tree_tracker_backup_$timestamp.json');
     
     await file.writeAsString(jsonEncode(backup));
     return file;
@@ -191,8 +191,8 @@ class ExportService {
     final file = await createBackup();
     await Share.shareXFiles(
       [XFile(file.path)],
-      subject: 'GeoCamera Backup - ${_formatDate(DateTime.now().toIso8601String())}',
-      text: 'Complete backup of GeoCamera data',
+      subject: 'Tree Tracker Backup - ${_formatDate(DateTime.now().toIso8601String())}',
+      text: 'Complete backup of Tree Tracker data',
     );
   }
 

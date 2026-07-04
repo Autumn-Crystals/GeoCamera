@@ -140,7 +140,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             child: Image.asset('assets/app_icon.png', fit: BoxFit.cover),
           ),
         ),
-        title: const Text('Nisargavaidya'),
+        title: const Text('Tree Tracker'),
         actions: [
           IconButton(
             icon: const Icon(Icons.photo_library, size: 22),

@@ -166,7 +166,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   String _getTitle() {
     switch (_currentIndex) {
       case 0:
-        return 'Nisargavaidya';
+        return 'Tree Tracker';
       case 1:
         return 'Photo Gallery';
       case 3:
@@ -174,7 +174,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
       case 4:
         return 'Donor Portal';
       default:
-        return 'Nisargavaidya';
+        return 'Tree Tracker';
     }
   }
 }

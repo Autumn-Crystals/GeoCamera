@@ -26,17 +26,17 @@ void main() async {
   await NotificationService.initialize();
   await NotificationService.requestPermissions();
   
-  runApp(const GeoCameraApp());
+  runApp(const NGOTreeTrackerApp());
 }
 
-class GeoCameraApp extends StatefulWidget {
-  const GeoCameraApp({super.key});
+class NGOTreeTrackerApp extends StatefulWidget {
+  const NGOTreeTrackerApp({super.key});
 
   @override
-  State<GeoCameraApp> createState() => _GeoCameraAppState();
+  State<NGOTreeTrackerApp> createState() => _NGOTreeTrackerAppState();
 }
 
-class _GeoCameraAppState extends State<GeoCameraApp> {
+class _NGOTreeTrackerAppState extends State<NGOTreeTrackerApp> {
   StreamSubscription? _connectivitySub;
 
   @override
@@ -60,7 +60,7 @@ class _GeoCameraAppState extends State<GeoCameraApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'GeoCamera',
+      title: 'NGO Tree Tracker',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
       home: const AuthGate(),

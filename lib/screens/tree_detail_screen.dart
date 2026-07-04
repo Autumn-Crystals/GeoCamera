@@ -337,7 +337,7 @@ class _TreeDetailScreenState extends State<TreeDetailScreen> {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: QrImageView(
-                    data: 'geocamera://tree/${tree.treeId}',
+                    data: 'ngo-tree-tracker://tree/${tree.treeId}',
                     version: QrVersions.auto,
                     size: 200.0,
                     backgroundColor: Colors.white,

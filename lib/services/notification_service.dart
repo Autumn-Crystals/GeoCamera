@@ -77,8 +77,8 @@ class NotificationService {
     String? payload,
   }) async {
     const androidDetails = AndroidNotificationDetails(
-      'geocamera_channel',
-      'GeoCamera Notifications',
+      'ngo_tree_tracker_channel',
+      'Tree Tracker Notifications',
       channelDescription: 'Tree plantation tracking notifications',
       importance: Importance.high,
       priority: Priority.high,
